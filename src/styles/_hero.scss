@@ -30,6 +30,7 @@
         &__combos {
             display: flex;
             justify-content: space-between;
+            list-style: none;
 
             &__combo {
                 width: calc(50% - 12px);
@@ -49,6 +50,7 @@
                     margin-top: 2vw;
                     margin-bottom: 8px;
                     text-transform: uppercase;
+                    border: none;
                 }
             }
         }
