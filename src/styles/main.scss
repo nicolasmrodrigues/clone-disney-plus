@@ -2,7 +2,7 @@
 @use 'hero';
 @use 'shows';
 @use 'plans';
-@use 'watch-anywhere';
+@use 'available-devices';
 
 @font-face {
     font-family: Avenir;
@@ -81,4 +81,42 @@ body {
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+}
+
+.image-text-section {
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+
+    &__text-container {
+        padding: 0 2vw;
+        
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &--image-full-width {
+        position: relative;
+        display: block;
+        img {
+            width: 100%;
+        }
+
+        &__text-container {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: calc(50% - 5.6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
 }
