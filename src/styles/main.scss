@@ -3,6 +3,7 @@
 @use 'shows';
 @use 'plans';
 @use 'available-devices';
+@use 'faq';
 
 @font-face {
     font-family: Avenir;
@@ -24,6 +25,7 @@
 }
 
 body {
+    letter-spacing: 0.2px;
     background-color: variaveis.$corDeFundo;
 }
 
