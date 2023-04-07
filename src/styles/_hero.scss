@@ -6,6 +6,11 @@
     background-image: url(../images/hero_desktop.jpeg);
     background-size: cover;
     text-align: center;
+
+    .button {
+        margin-top: 2vw;
+        margin-bottom: 8px;
+    }
     
     &__content {
         max-width: 640px;
@@ -30,7 +35,6 @@
         &__combos {
             display: flex;
             justify-content: space-between;
-            list-style: none;
 
             &__combo {
                 width: calc(50% - 12px);
