@@ -15,10 +15,16 @@
                 user-select: none;
                 color: #fff;
                 font-size: 20px;
+                line-height: 30px;
                 padding: 24px;
                 display: block;
                 cursor: pointer;
                 position: relative;
+
+                @media (max-width: 768px) {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
 
                 &::after {
                     content: '+';
@@ -29,6 +35,10 @@
                     font-size: 40px;
                     display: flex;
                     align-items: center;
+
+                    @media (max-width: 768px) {
+                        right: 15px;
+                    }
                 }
             }
 
